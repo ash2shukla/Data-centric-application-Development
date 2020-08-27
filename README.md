@@ -3,11 +3,11 @@
 ### To get you up and running with streamlit, bokeh and docker ( backed by pandas and scikit-earn ) and maybe promote open source involvement from ABES IT's IT dept.
 
 ### Q. What will I get if I listen to you in the session ?
-We will create something from scratch and deploy it for free on heroku.
+- We will create something from scratch and deploy it for free on heroku.
 
-You will get to learn how to create a simple data science oriented project to make your life a little easier in Final year and beyond.
+- You will get to learn how to create a simple data science oriented project to make your life a little easier in Final year and beyond.
 
-If you are interested in hackathons you will get to know how can you make something presentable really fast.
+- If you are interested in hackathons you will get to know how can you make something presentable really fast.
 
 ---
 
@@ -42,6 +42,8 @@ Certainly not importing from a bunch of libraries and pasting it in a file.
 ### Q. What is data science.
 
 ![](assets/what-the-hell-is-data-science.png)
+
+### Q. What do we do in datascience.
 
 The whole process of collecting data, exploring data, producing insights from data, predicting based on data and then putting the predictions to production.
 
@@ -85,14 +87,20 @@ Data Centric apps can be built using these libs -
 1. Bokeh
 2. Dash
 3. Panel
-4. Streamlit
+4. Voila!
+5. Streamlit
 
 ### Q. I dont have to learn all of them if they serve the same purpose, right ?
 Yes but they are not exactly the same.
 
 Bokeh is good at one thing, Dash is at other, Streamlit at other..
 
-### What does a Data centric app look like ?
+### Q. What does a Data centric app look like ?
+
+https://covid19.who.int/explorer
+
+
+
 It has 2 things.
 
 1. Graphs
@@ -104,4 +112,100 @@ Widgets feed values, Graphs show those values.
 
 ### Lets focus on the first part. Graphs. We will explore it with Bokeh.
 
+## 5. Creating interactive Charts with Bokeh
 
+Bokeh works in 2 ways.
+
+1. standalone
+2. bidirectional
+
+### 1. Standalone
+
+![](assets/bokeh-standalone.png)
+
+How to serve ?
+
+Just serve the created HTML file using any static HTTP server. 
+
+### 2. Bidirectional
+
+![](assets/bokeh-bidirectional.png)
+
+How to serve ?
+
+Bokeh provides a server as a cli !
+
+just run this
+
+```python
+bokeh serve my_app.py
+```
+
+## 6. Challenges with Bokeh
+
+#### Bokeh is absolutely awesome for graphing but handling widget's callbacks is .. 😫😫😫
+
+![](assets/callback-hell.png)
+
+#### Also we have to write some JS sometimes.
+
+### Q. How can I make my life easier then ?
+
+Enter Streamlit !
+
+## 7. Skipping callbacks with streamlit
+
+![](assets/no-worry-callback.png)
+
+## 8. How Streamlit works under the hood
+
+![](assets/Streamlit-working.png)
+
+## 9. Deploying a streamlit app to Heroku with Docker
+
+### Q. Docker? What?
+
+Its a containerization tool to bundle all of your application's dependencies ( including the OS ) into one small image that can be run anywhere on anyone's system having docker installed.
+
+### Q. So is it like a virtual machine ?
+
+Yes *like* a VM but way more lighter than a VM. It doesnt hold system resources the way the VMs do. It doesnt talk directly talk to the kernel to give it resources so creating and destroying these containers is pretty fast !
+
+### Q. How can I create one container ?
+
+You need an image, and then you can run that image to create container.
+Container is equivalent of an installed copy of an OS. And the ISO that you burn on a CD/pendrive to install the OS has its equivalent as Docker image.
+
+### Q. OK ! THEN TELL ME HOW TO CREATE AN IMAGE !? 😠
+
+Lets explore it with containerization of streamlit app.
+
+[Go to this repo and follow the steps!](https://github.com/ash2shukla/streamlit-heroku)
+
+## 10. Developing custom components for Streamlit
+
+### Q. So that was nice and all but am I constrained only to what streamlit provides me in terms of widgets ? 😒
+
+No. you can create your own widgets using streamlit component library!
+
+Lets create one!
+
+## 11. Publishing your component to PyPI.
+
+### Q. I have developed an awesome component that you want to contribute to open source. How can I do it ?
+
+You bundle the component and upload it to PyPi ! THen people can install your component like you install other's libraries !
+
+Lets publish our component !
+
+---
+## And we wrap the session now!
+
+![](assets/not-sure-if.png)
+
+## For any questions raise an issue in this repo or reach out to me at Linkedin or mail me at ash2shukla@gmail.com !
+
+![](assets/any-questions.gif)
+
+## If you liked the content leave a ⭐ ! 
+---
