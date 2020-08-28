@@ -196,7 +196,7 @@ BEWARE: Javascript ahead.
 
 ## 11. Publishing your component to PyPI.
 
-### Q. I have developed an awesome component that you want to contribute to open source. How can I do it ?
+### Q. I have developed an awesome component that I want to contribute to open source. How can I do it ?
 
 You bundle the component and upload it to PyPi ! THen people can install your component like you install other's libraries !
 
