@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    app:
+        image: streamlit-docker
+        build:
+            dockerfile: ./docker-example/Dockerfile
+            context: ../
+        environment:
+            - PORT=${PORT}
+        ports:
+            - ${PORT}:${PORT}

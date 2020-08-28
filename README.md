@@ -169,7 +169,7 @@ Its a containerization tool to bundle all of your application's dependencies ( i
 
 ### Q. So is it like a virtual machine ?
 
-Yes *like* a VM but way more lighter than a VM. It doesnt hold system resources the way the VMs do. It doesnt talk directly talk to the kernel to give it resources so creating and destroying these containers is pretty fast !
+Yes *like* a VM but way more lighter than a VM. It doesnt hold system resources the way the VMs do. It doesnt talk directly to the kernel to give it resources so creating and destroying these containers is pretty fast !
 
 ### Q. How can I create one container ?
 
@@ -180,6 +180,8 @@ Container is equivalent of an installed copy of an OS. And the ISO that you burn
 
 Lets explore it with containerization of streamlit app.
 
+### Q. Nice I have an image now how can I deploy it on Heroku ?
+
 [Go to this repo and follow the steps!](https://github.com/ash2shukla/streamlit-heroku)
 
 ## 10. Developing custom components for Streamlit
@@ -189,6 +191,8 @@ Lets explore it with containerization of streamlit app.
 No. you can create your own widgets using streamlit component library!
 
 Lets create one!
+
+BEWARE: Javascript ahead.
 
 ## 11. Publishing your component to PyPI.
 

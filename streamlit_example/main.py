@@ -3,7 +3,8 @@ from pathlib import Path
 import pandas as pd
 from bokeh.plotting import figure
 
-data_path = Path(__file__).parent.parent / "data" / "data.csv"
+# data_path = r"E:\Studies\Data centric application development\data\data.csv"
+data_path = "/data/data.csv"
 df = pd.read_csv(data_path)
 options = list(df.dtypes[df.dtypes == "float64"].index)
 
