@@ -192,6 +192,8 @@ No. you can create your own widgets using streamlit component library!
 
 Lets create one!
 
+[Refer to this tutorial for future reference](https://streamlit-components-tutorial.netlify.app/) Credits: [@andfanilo](https://github.com/andfanilo)
+
 BEWARE: Javascript ahead.
 
 ## 11. Publishing your component to PyPI.
